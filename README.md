@@ -42,6 +42,7 @@ Make changes to all previous folders and files according to ```Starter Code``` F
   - Focus any unique Semantic Tag Emphasis: em, strong, etc.
 
 Next
+- See JavaScript Memories Starter Code Ideas
 - connect scripts files to html files by verifying console log entries 
 
 ---
