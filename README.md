@@ -41,6 +41,7 @@ Make changes to all previous folders and files according to ```Starter Code``` F
     - header, section, article, and footer may have additional css overwrites in .css, head, and inline
   - Focus any unique Semantic Tag Emphasis: em, strong, etc.
 
-
+Next
+- connect scripts files to html files by verifying console log entries 
 
 ---
