@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Child Page Template</title>
+
+    <meta name="author" content="Mark Mercer">
+    <meta name="description" content="JavaScript Assignments"> <!-- Webpage Description to poplulate search engines like Google-->
+    <meta name="keywords" content="JavaScript, Arithtemtic, Validation"> <!-- Key words for searching -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+
+  <body>
+
+    <header><h1>JavaScript Assignments</h1></header>
+    <nav><h2></h2></nav>
+    <aside><p></p></aside>
+    <section>
+      <h3>Assignment: [Name]</h3>
+      <article><p></p></article>
+      </section>
+
+    <form action="x.html" method="post" onsubmit="event.preventDefault();">
+       <!-- Ensures this FORM doesn't work with PHP or other server side scripting languages-->
+
+     <p>&nbsp;</p>
+     <!-- See: https://www.w3schools.com/html/html_entities.asp-->
+     <!-- Non-breaking real space, adds real space to webpage that is not eliminated by browser (hard coded space)-->
+     <p>
+       <label for="textfield">Number 1:</label>
+       <input name="textfield1" type="text" id="textfield1">
+     </p>
+     <p>
+       <label for="textfield2">Number 2:</label>
+       <input name="textfield2" type="text" id="textfield2">
+     </p>
+          <!-- Textarea is mutliline plain text editing control-->
+     <p>
+       <label for="tArea">Text Area:</label>
+       <textarea type="tArea" cols="20" rows="4" id="password"></textarea>
+     </p>
+     <p>&nbsp;</p>
+
+       <fieldset>
+         <legend>Case Studies</legend>
+         <div> Test Cases
+           <ul>
+             <li>
+           </ul>
+         </div>
+           <label>
+             <input type="radio" name="RadioGroup1" value="radio1" id="RadioGroup1_0">
+             Radio 1
+           </label>
+           <br>
+           <label>
+             <input type="radio" name="RadioGroup1" value="radio2" id="RadioGroup1_1">
+             Radio 2
+           </label>
+           <br>
+           <label>
+             <input type="radio" name="RadioGroup1" value="radio3" id="RadioGroup1_2">
+             Radio 3
+           </label>
+           <br>
+         </fieldset>
+
+     <p>&nbsp;</p>
+       <fieldset>
+         <legend>Case Studies</legend>
+         <div> Test Cases
+           <ul>
+             <li>
+           </ul>
+         </div>
+           <label>
+             <input type="checkbox" name="CheckboxGroup1" nalue="checkbox1" id="CheckboxGroup1_0">
+             Checkbox 1
+           </label>
+           <br>
+           <label>
+             <input type="checkbox" name="CheckboxGroup1" nalue="checkbox2" id="CheckboxGroup1_1">
+             Checkbox 2
+           </label>
+           <br>
+           <label>
+             <input type="checkbox" name="CheckboxGroup1" nalue="checkbox3" id="CheckboxGroup1_2">
+             Checkbox 3
+           </label>
+           <br>
+       </fieldset>
+
+       <!-- Submit Button-->
+       <br><br>
+       <button type="button" onclick="main()">Submit</button>
+       <br>
+       <h3>The Answer is:
+         <a id="large">What is the Answer?!!!</a>
+       </h3>
+
+    <script src="../scripts/childTemplate.js"></script>
+
+  </body>
+
+  <footer>
+    <blockquote cite="https://www.brainyquote.com/quotes/mitchell_kapor_163583">
+    <!--  Date Accessed: 20180920 -->
+    <p><strong>"Getting information off the Internet is like taking a drink from a firehose."</strong>
+      <em><a href="https://www.brainyquote.com/quotes/mitchell_kapor_163583" target="_blank">- Michell Kapor</a></em></p>
+    <p>&copy Mark Mercer, powered by MercersKitchen in GitHub</p>
+  </footer>
+
+</html>
