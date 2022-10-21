@@ -14,4 +14,10 @@ CS20
 
 # To Include
 
+Summary Notes and Assignments
+- Create Website Repository
+- Review ReadMe.md, GitHub Markdown, and To Do Lists (hyperlink to GitHub Markdown)
+- Create Project Folders, ReadMe.txt, and childTemplate.html 
+- Create index.html from childTemplate.HTML
+
 ---
