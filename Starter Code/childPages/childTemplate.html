@@ -84,19 +84,20 @@
               <li>
             </ul>
           </div>
-            <label>
-              <input type="radio" name="RadioGroup1" value="radio1" id="RadioGroup1_0">
-              Radio 1
+          <!-- Note: same names define one group of radio buttons, only one can be selected at a time-->
+          <!-- Type, defines initial value of input field: text | password | hidden-->
+          <!-- Value, defines the associated input or value sent on sumbit: checkbox, radio, image -->
+          <!-- onclick: if a button is not clicked, a value is not sent-->
+            <label for="RadioGroup1">Radio 1
+              <input type="radio" name="RadioGroup1" id="RadioGroup1_0" onclick="populateRadioButton(this.value)" value="radio1" >
             </label>
             <br>
-            <label>
-              <input type="radio" name="RadioGroup1" value="radio2" id="RadioGroup1_1">
-              Radio 2
+            <label for="RadioGroup1">Radio 2
+              <input type="radio" name="RadioGroup1" id="RadioGroup1_1" onclick="populateRadioButton(this.value)" value="2" >
             </label>
             <br>
-            <label>
-              <input type="radio" name="RadioGroup1" value="radio3" id="RadioGroup1_2">
-              Radio 3
+            <label for="RadioGroup1">Radio 3
+              <input type="radio" name="RadioGroup1" id="RadioGroup1_2" onclick="populateRadioButton(this.value)" value="I like this one best" >
             </label>
             <br>
           </fieldset>
@@ -129,9 +130,16 @@
    
         <!-- Submit Button & Feedback-->
         <br><br>
-        <button type="button" onclick="main()">Submit for Textfield</button>
+        <button type="button" onclick="mainFieldText()">Submit for Textfield</button>
         <strong>What did I input?
-          <a id="answer">Random Text</a>
+          <a id="answerTextField">Random Text</a>
+        </strong>
+
+        <!-- Submit Button & Feedback-->
+        <br><br>
+        <button type="button" onclick="javaScriptRadioButton()">Submit for Radio Button</button>
+        <strong>What did I Click?
+          <a id="answerRadioButton">Random Text</a>
         </strong>
    
       </section>

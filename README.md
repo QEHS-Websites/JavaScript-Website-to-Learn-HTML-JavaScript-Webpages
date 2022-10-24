@@ -39,8 +39,13 @@ Summary Notes and Assignments
   - Verify childTemplate.html to childTemplate.js connection through,
     - Chrome: More Tools / Developer Tools / Console
     - Note: able to comment-out or delete this line after connected
-    
-- Create index.html from childTemplate.HTML
+  - Notes about JavaScript Template
+    - Uses Variables consistent with HTML
+    - Uses document IDs to introduce ways JavaScript Acesses HTML
+    - Validates input using JavaScript Alert or inner HTML changes
+    - Uses Built-in Function ```isNaN`` as introduction to various JavaScript Validation Tools
+
+  - Create index.html from childTemplate.HTML
 
 Make changes to all previous folders and files according to ```Starter Code``` Folder
 - Review ReadMe.md / List Making in Starter Code / ReadMe.md

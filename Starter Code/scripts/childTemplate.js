@@ -2,12 +2,17 @@
 console.log("I made it to childTemplate.js!");
 
 let stop = false; //Boolean for testNaN() validation function, see end of file
+let radioButton;
 
-function javaScript (a, b) { //Where console.log tested file goes
+function javaScriptTextField (a, b) { //Where console.log tested file goes
   return console.log("I said ... " + a + " " + b);
 }
+function javaScriptRadioButton () { //Where console.log tested file goes
+  return document.getElementById("answerRadioButton").innerHTML = "I said ... " + firstNumber + " " + secondNumber;
+}
+
 //Main functions, necessary lines of code
-function main () {
+function mainFieldText () {
 
   let firstNumber, secondNumber; //Variables particular to JavaScript Assignment, makes it work
 
@@ -30,8 +35,8 @@ function main () {
   }
   else {
     //Difference between calling functions with arguements and sending to parameter's, local variables
-    javaScript (firstNumber, secondNumber); // Change to more appropriate message
-    document.getElementById("answer").innerHTML = "I said ... " + firstNumber + " " + secondNumber;
+    javaScriptTextField (firstNumber, secondNumber); // Change to more appropriate message
+    document.getElementById("answerTextField").innerHTML = "I said ... " + firstNumber + " " + secondNumber;
   }
 }
 
@@ -44,4 +49,9 @@ function testNaN (number) {
   } else {
     return "Input Validated"
   }
+}
+
+function populateRadioButton(value) {
+  radioButton = value;
+  console.log(radioButton);
 }
