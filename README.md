@@ -5,6 +5,18 @@ CS20
 
 **UNDER CONSTRUCTION**
 
+### Progressions (See Google Classroom for updates, Self Study Course): 
+- Develop HTML & CSS Website
+- Develop ideas about what JavaScript will do
+- Create Learning JavaScript Website (especially for HTML-JavaScript connections to input text, radio, or checkbox information)
+- Complete JavaScript Assignments
+
+Requirements
+- mutliple uses for text (strings and number), radio, and checkbox input
+
+### Important Links
+- https://github.com/QEHS-Websites/Overview#intermedicate-html--css
+
 ---
 
 # JavaScript HTML Interactions
@@ -66,6 +78,7 @@ Make changes to all previous folders and files according to ```Starter Code``` F
 Next
 - Open Intermediate CS and follow links here
 - See JavaScript Memories Starter Code Ideas
-- connect scripts files to html files by verifying console log entries 
+- Starter Code is complete, including HTML-JavaScript Connection 
+- Transfer Lesson Files to Teacher Lessons and Research Repository (or delete the lessons)
 
 ---
