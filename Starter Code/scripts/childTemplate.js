@@ -3,12 +3,17 @@ console.log("I made it to childTemplate.js!");
 
 let stop = false; //Boolean for testNaN() validation function, see end of file
 let radioButton;
+let checkBoxButton = [];
 
-function javaScriptTextField (a, b) { //Where console.log tested file goes
+function javaScriptTextField (a, b) { //submission after submit button
   return console.log("I said ... " + a + " " + b);
 }
-function javaScriptRadioButton () { //Where console.log tested file goes
-  return document.getElementById("answerRadioButton").innerHTML = "I said ... " + firstNumber + " " + secondNumber;
+function javaScriptRadioButton () { //Submission after Radio Submit Button
+  return document.getElementById("answerRadioButton").innerHTML = "I said ... " + radioButton;
+}
+
+function javaScriptcheckBoxButton () { //Submission after Radio Submit Button
+  return document.getElementById("answerCheckBoxButton").innerHTML = "I said ... " + checkBoxButton.toString(); //note: checkboxButton.join(" * ")
 }
 
 //Main functions, necessary lines of code
@@ -42,6 +47,7 @@ function mainFieldText () {
 
 //Functions that are used mutliple times in the previous program
 //DO NOT need to be focused on, read afterwards
+
 function testNaN (number) {
   if ( isNaN (number) ) { //NaN are NOT values of REAL Number System
     stop = true;
@@ -51,7 +57,27 @@ function testNaN (number) {
   }
 }
 
+//For Radio Button Click
 function populateRadioButton(value) {
-  radioButton = value;
-  console.log(radioButton);
+  radioButton = value; //Radio Buttons only allow 1 value at a time
+  console.log(radioButton); //Verifies variable value to console after each click
 }
+
+//For Checkboxes
+//Introduces JavaScript Array Methods: .toString() | .pop() | .push() | .shift() | .unshift() | .concat()
+//Summary: .splice( indexPosition, amountRemoved, newElement(s) ) | .slice(startInclude, endNotInclude)
+//Advanced: sort() | reverse() | compare function: function(a, b){return a - b} | Math.min.apply() | Math.max.apply
+//CAUTION: .delete() leaves null at affected index
+function populateCheckboxes(id, value) {
+  //let checkbox = document.getElementById(id); //example using variable as intermediary 
+  console.log(id, value);
+  if ( document.getElementById(id).checked == true) {
+    checkBoxButton.push(value); //checkboxes allow mutliple values
+  } else {
+    checkBoxButton.pop(value);
+  }
+  console.log( "Array Length is: " + checkBoxButton.length + "\t" + "Elements are: " + checkBoxButton.toString() ) //note: checkboxButton.join(" * ")
+}
+//CAUTION: this is a very simple algorithm that associates user-initiated ascending and descending checkbox clicks
+//Known Error: do not click in order
+//More sophisicated algorithms would use the ID as a number to .splice() single elements

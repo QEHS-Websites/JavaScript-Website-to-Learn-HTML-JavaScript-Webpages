@@ -97,7 +97,7 @@
             </label>
             <br>
             <label for="RadioGroup1">Radio 3
-              <input type="radio" name="RadioGroup1" id="RadioGroup1_2" onclick="populateRadioButton(this.value)" value="I like this one best" >
+              <input type="radio" name="RadioGroup1" id="RadioGroup1_2" onclick="populateRadioButton(this.value)" value="I like this radio button the best" >
             </label>
             <br>
           </fieldset>
@@ -111,35 +111,42 @@
               <li>
             </ul>
           </div>
-            <label>
-              <input type="checkbox" name="CheckboxGroup1" nalue="checkbox1" id="CheckboxGroup1_0">
-              Checkbox 1
+            <label for="CheckboxGroup1">Checkbox 1
+              <input type="checkbox" name="CheckboxGroup1" id="CheckboxGroup1_0" onclick="populateCheckboxes(this.id, this.value)" value="1">
+              
             </label>
             <br>
-            <label>
-              <input type="checkbox" name="CheckboxGroup1" nalue="checkbox2" id="CheckboxGroup1_1">
-              Checkbox 2
+            <label for="CheckboxGroup1">Checkbox 2
+              <input type="checkbox" name="CheckboxGroup1" id="CheckboxGroup1_1" onclick="populateCheckboxes(this.id, this.value)" value="two">
+              
             </label>
             <br>
-            <label>
-              <input type="checkbox" name="CheckboxGroup1" nalue="checkbox3" id="CheckboxGroup1_2">
-              Checkbox 3
+            <label for="CheckboxGroup1">Checkbox 3
+              <input type="checkbox" name="CheckboxGroup1" id="CheckboxGroup1_2" onclick="populateCheckboxes(this.id, this.value)" value="I like this checkbox the best">
+              
             </label>
             <br>
         </fieldset>
    
-        <!-- Submit Button & Feedback-->
+        <!-- Text Field Submit Button & Feedback-->
         <br><br>
         <button type="button" onclick="mainFieldText()">Submit for Textfield</button>
         <strong>What did I input?
           <a id="answerTextField">Random Text</a>
         </strong>
 
-        <!-- Submit Button & Feedback-->
+        <!-- Radio Submit Button & Feedback-->
         <br><br>
         <button type="button" onclick="javaScriptRadioButton()">Submit for Radio Button</button>
         <strong>What did I Click?
           <a id="answerRadioButton">Random Text</a>
+        </strong>
+
+        <!-- Checkbox Submit Button & Feedback-->
+        <br><br>
+        <button type="button" onclick="javaScriptcheckBoxButton()">Submit for Radio Button</button>
+        <strong>What did I Click?
+          <a id="answerCheckBoxButton">Random Text</a>
         </strong>
    
       </section>
