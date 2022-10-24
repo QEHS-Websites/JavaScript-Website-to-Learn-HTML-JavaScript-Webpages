@@ -13,8 +13,9 @@ Demonstration of HTML Form Data and JavaScript Interactions
 Excellent Testing & Development Resources
 - W3 Schools "You try it" Windows
 - ??? 3 window tool (what is that name again?)
+
 Progressions
-- (See To Include for draft)
+- (See To Include Below for updated draft)
 
 ---
 
@@ -39,13 +40,18 @@ Summary Notes and Assignments
   - Verify childTemplate.html to childTemplate.js connection through,
     - Chrome: More Tools / Developer Tools / Console
     - Note: able to comment-out or delete this line after connected
-  - Notes about JavaScript Template
+  - Notes about JavaScript Template childTemplate.js
     - Uses Variables consistent with HTML
     - Uses document IDs to introduce ways JavaScript Acesses HTML
     - Validates input using JavaScript Alert or inner HTML changes
     - Uses Built-in Function ```isNaN`` as introduction to various JavaScript Validation Tools
-
+    - Uses two functions in Radio Buttons to separate variable population and output to HTML
+    - Uses Arrays in CHeckboxes and simple algorithm to populate array and output to HTML
+    - CAUTION: the array algorithm should be made more sophisicated with array methods listed connecting ID number and value
   - Create index.html from childTemplate.HTML
+  - Create and connect index.html to .css and .js (note, index.js is done for you)
+  - Create and connect all assignment pages to .css & .js
+  - Note: follow the assignemnt directions and pick which javaScript-HTML form to use (textbox, radio button, or checkbox)
 
 Make changes to all previous folders and files according to ```Starter Code``` Folder
 - Review ReadMe.md / List Making in Starter Code / ReadMe.md

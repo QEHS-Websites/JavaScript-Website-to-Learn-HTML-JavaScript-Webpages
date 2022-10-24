@@ -24,7 +24,8 @@
     <noscript>JavaScript is required, adjust your settings</noscript>
 
     <!-- JavaScript can be put in head or body -->
-    <script src="scripts/index.js"></script> <!-- inline javaScript may be overwritten if link in head-->
+    <!-- inline javaScript may be overwritten if link in head or body-->
+    <!-- Best Practice, load the HTML before loading the JavaScript since humans need time to read and computers need time to load JavaScript, happening at the same time-->
 
   </head>
 
@@ -49,6 +50,8 @@
     <aside></aside>
     <section></section>
     <article></article>
+
+    <script src="scripts/index.js"></script><!-- JavaScript can be put in head or body -->
     
   </body>
 
