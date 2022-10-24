@@ -29,6 +29,17 @@ Summary Notes and Assignments
 - Create Website Repository
 - Review ReadMe.md, GitHub Markdown, and To Do Lists (hyperlink to GitHub Markdown)
 - Create Project Folders, ReadMe.txt, and childTemplate.html 
+  - childTemplate.html progression list
+  - Build Basic Head with .css and .js file links
+  - Build Body with HTML-JavaScript Text Field, Radio Button, Case Studies, and Submit Options
+  - Note: submit could be combined with various website input fields, not separate
+  - Build Appropriate Footer
+  - Verify childTemplate.html to main.css connection (i.e. formatting a text change)
+  - .css CAUTION: remove any commented-out formatting lines
+  - Verify childTemplate.html to childTemplate.js connection through,
+    - Chrome: More Tools / Developer Tools / Console
+    - Note: able to comment-out or delete this line after connected
+    
 - Create index.html from childTemplate.HTML
 
 Make changes to all previous folders and files according to ```Starter Code``` Folder

@@ -1,9 +1,10 @@
-console.log("I made it to childTemplate.js!"); //Debugging line to console ensuring JavaScript Link
+//Debugging line to console ensuring JavaScript Link
+console.log("I made it to childTemplate.js!");
 
 let stop = false; //Boolean for testNaN() validation function, see end of file
 
-function javaScript () { //Where console.log tested file goes
-
+function javaScript (a, b) { //Where console.log tested file goes
+  return console.log("I said ... " + a + " " + b);
 }
 //Main functions, necessary lines of code
 function main () {
@@ -29,11 +30,13 @@ function main () {
   }
   else {
     //Difference between calling functions with arguements and sending to parameter's, local variables
-    console.log("What did you say?", javaScriptFunction-Solution (firstNumber, secondNumber)); // Change to more appropriate message
-    document.getElementById("answer").innerHTML = "What did you say? " + geometry (firstNumber, secondNumber);
+    javaScript (firstNumber, secondNumber); // Change to more appropriate message
+    document.getElementById("answer").innerHTML = "I said ... " + firstNumber + " " + secondNumber;
   }
 }
 
+//Functions that are used mutliple times in the previous program
+//DO NOT need to be focused on, read afterwards
 function testNaN (number) {
   if ( isNaN (number) ) { //NaN are NOT values of REAL Number System
     stop = true;

@@ -13,7 +13,7 @@
     <meta name="keywords" content="JavaScript, HTML, Form, Data"> <!-- Key words for searching -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--- view port -->
 
-    <link rel="stylesheet" type="text/css" href="mystyle.css"> <!-- This order makes the .css overwritten by the head, then inline-->
+    <link rel="stylesheet" type="text/css" href="..\MAIN.css"> <!-- This order makes the .css overwritten by the head, then inline-->
 
     <style>
       * {}
@@ -24,7 +24,8 @@
     <noscript>JavaScript is required, adjust your settings</noscript>
 
     <!-- JavaScript can be put in head or body -->
-    <script src="scripts/index.js"></script> <!-- inline javaScript may be overwritten if link in head-->
+    <!-- inline javaScript may be overwritten if link in head or body-->
+    <!-- Best Practice, load the HTML before loading the JavaScript since humans need time to read and computers need time to load JavaScript, happening at the same time-->
 
   </head>
 
@@ -60,10 +61,12 @@
         <p>
           <label for="textfield">Number 1:</label>
           <input name="textfield1" type="text" id="textfield1">
+          <a id="validityTest1">Enter a Number</a>
         </p>
         <p>
           <label for="textfield2">Number 2:</label>
           <input name="textfield2" type="text" id="textfield2">
+          <a id="validityTest2">Enter a Number</a>
         </p>
         
         <!-- Textarea is multiline plain text editing control-->
@@ -124,13 +127,12 @@
             <br>
         </fieldset>
    
-        <!-- Submit Button-->
+        <!-- Submit Button & Feedback-->
         <br><br>
-        <button type="button" onclick="main()">Submit</button>
-        <br>
-        <h3>The Answer is:
-          <a id="large">What is the Answer?!!!</a>
-        </h3>
+        <button type="button" onclick="main()">Submit for Textfield</button>
+        <strong>What did I input?
+          <a id="answer">Random Text</a>
+        </strong>
    
       </section>
     </main>
